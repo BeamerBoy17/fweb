@@ -57,17 +57,21 @@ justify-content: center;
     left: 10%;
     }
     .dashboard{
+        margin-left: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     flex:0.2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:space-evenly;
     text-align: center;
-    background:#232A51;;
+    background:#232A51;
     border-radius: 1rem;
     }
     .graphic{
-        flex: 1;
+        position: relative;
+   
      }
     /* .link{
         display: flex;
@@ -79,6 +83,7 @@ justify-content: center;
     } */
     .link:hover{
         color:#bc2a8d;
+ 
     }
    
     .link h2{
@@ -98,6 +103,11 @@ justify-content: center;
 height: 15vh;
     }
     .item:hover{
+        -webkit-transition: all 0.3s ease;;
+        -moz-transition: all 0.3s ease;;
+        -o-transition: all 0.3s ease;;
+        transition: all 0.3s ease;
+        
         color:#bc2a8d;
     }
  
@@ -121,24 +131,80 @@ a{
     text-decoration: none;  
 }
 .card_money{
-  
-    
-    margin:1rem;
-    margin-top: 10rem;
+    display: flex;
+    position:relative;
+    justify-content: left;
+    margin:1.8rem;
+    margin-top: 24rem;
     background: #232A51;
     max-width:350px;
-    max-height: 250px;
-    height: 100px;
+    max-height: 350px;
+    height: 266px;
+    width: 350px;
     text-align: center;
     font-family: sans-serif;
     border-radius: 1rem;
+    right:280px;
+  
+    
 }
+.line {
+    border: 1px solid #3F4572;
+    height: 12px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    background-color: #3F4572;
+    width: 200%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  
+  .line:before {
+    content: '';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 60%;
+    background: #3EF3D3;
+ 
+  }
+  .line1 {
+    border: 1px solid #3F4572;
+    height: 12px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    width: 200%;
+    background-color: #3F4572;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .line1:before {
+    content: '';
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    background:#3B6FE9;
+ 
+  }
 
 .money{
-    padding-top: 2rem;
+    margin: 1px;
+    margin-left: 1rem;
+    padding-top: 4rem;
     font-weight: bold;
-    font-size: 26px;
-padding-right: 3rem;
+    font-size: 20px;
+    padding-right: 0rem;
+    position:static;
 }
 .diagramm{
    
@@ -155,28 +221,88 @@ padding-right: 3rem;
  
 }
 .title{
+    margin-top: 1rem;
+    letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
     margin:2rem;
-    margin-left: 63px;
+    margin-left: 60px;
     color:#FFFFFF;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 600;
-    
+    text-align: center;
+    position: relative;
 }
 .title_money{
     font-family: 'Roboto', sans-serif;
-    margin-top:130px;
-    margin-left: 100px;
+    margin-top:140px;
+    margin-left: 99px;
     color:#FFFFFF;
     font-size: 26px;
     font-weight: 600;
+    
 
 }
+
 .pig{
     position:absolute ;
     margin-left: 3rem;
     margin-top: 1rem;
     
 }
+.cashflow{
+    margin:1rem;
+    padding-left: 5rem;
+    position: absolute;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 16px;
+    letter-spacing: 1px;
+font-weight: 600;
+}
+.status{
+    text-align: left;
+    margin-left: 1rem;
+    color: #555E93;
+}
+.bar{
+    margin-top: 1rem;
+}
+
+.finhabits{
+    
+    justify-content: left;
+    font-weight: 600;
+    max-width:500px;
+    max-height: 350px;
+    height: 500px;
+    border-radius: 1rem;
+    position:inherit;
+    align-items: right;
+    margin:1rem;
+    background:#232A51;
+    position: absolute;
+    left:34rem;
+    }
+    .title_habits{
+        letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif;
+        margin:1rem;
+        text-align: center;
+        color:#FFFFFF;
+        font-size: 16px;
+        font-weight: 600;
+    }
+  .fa-passport{
+      margin: 1rem;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 36px;
+      color:white;
+      border:2px solid #404882;
+      width: 200px;
+      height: 200px;
+      border-radius: 1rem;
+  }
 
 

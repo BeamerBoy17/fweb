@@ -29,31 +29,27 @@ var Chart = new Chart(myChart, {
         }]
     },
     options: {
+      
       responsive: true,
       plugins: {
+
         legend: {
           display: true,
           position: 'right',
           fontColor:'#FFFFFF',
-        
+
         labels: {
-        
-         
           color:'white',
           usePointStyle: true,
           fontColor:'##FFFFFF',
-        
+
         font:{  
           size:14,
           family:'sans-serif'
         }
-        
         },
-        },
-        
-          
-        
-        
+        },  
       }
     },
   });
+  
