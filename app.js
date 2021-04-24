@@ -24,7 +24,7 @@ var Chart = new Chart(myChart, {
           hoverOffset: 4,
           borderWidth:0, 
           fill: false,
-          
+    
      
         }]
     },
@@ -41,15 +41,21 @@ var Chart = new Chart(myChart, {
         labels: {
           color:'white',
           usePointStyle: true,
-          fontColor:'##FFFFFF',
-
-        font:{  
-          size:14,
-          family:'sans-serif'
-        }
+          fontColor:'##FFFFFF'
         },
         },  
       }
     },
   });
+  var promisedDeliveryChart = new Chart(document.getElementById('myChart'), {
+    type: 'doughnut',
+    data: data,
+    options: {
+      responsive: true,
+      legend: {
+        display: false
+      }
+    }
+  });
   
+ 
